@@ -7,7 +7,7 @@ if (typeof window == "undefined") { // Only run as worker
 
   self.addEventListener('message', function(e) {
     // console.log("New message received by worker", e.data.data.length)
-   importScripts(
+importScripts(
   "https://kevinc74.github.io/OpenBuilds-CAM/lib/clipperjs/clipper_unminified.js",
   "https://kevinc74.github.io/OpenBuilds-CAM/lib/threejs/three.min.js",
   "https://kevinc74.github.io/OpenBuilds-CAM/lib/gl-matrix.js",
