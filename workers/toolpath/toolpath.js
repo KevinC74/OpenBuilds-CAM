@@ -15,7 +15,7 @@ function drawToolpath(index) {
   $("#generatetpgcode").prop('disabled', true);
   $("#generatetpgcode").removeClass('success');
 
-  var toolPathWorker = new Worker('workers/toolpath/worker/toolpathworker.js?v=2');
+var toolPathWorker = new Worker('https://kevinc74.github.io/OpenBuilds-CAM/workers/toolpath/worker/toolpathworker.js');
   toolpathsInScene[index].userData.worker = toolPathWorker
   toolPathWorker.addEventListener('message', function(e) {
     // console.log(e.data)

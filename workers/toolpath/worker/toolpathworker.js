@@ -9,10 +9,10 @@ if (typeof window == "undefined") { // Only run as worker
     // console.log("New message received by worker", e.data.data.length)
 var base = self.location.href.substring(0, self.location.href.indexOf("/workers/"));
 importScripts(
-    base + "/lib/clipperjs/clipper_unminified.js",
-    base + "/lib/threejs/three.min.js",
-    base + "/lib/gl-matrix.js",
-    base + "/lib/tbfleming/web-cam-cpp.js"
+  "https://kevinc74.github.io/OpenBuilds-CAM/lib/clipperjs/clipper_unminified.js",
+  "https://kevinc74.github.io/OpenBuilds-CAM/lib/threejs/three.min.js",
+  "https://kevinc74.github.io/OpenBuilds-CAM/lib/gl-matrix.js",
+  "https://kevinc74.github.io/OpenBuilds-CAM/lib/tbfleming/web-cam-cpp.js"
 );
 
 
