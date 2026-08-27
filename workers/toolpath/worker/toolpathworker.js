@@ -7,11 +7,12 @@ if (typeof window == "undefined") { // Only run as worker
 
   self.addEventListener('message', function(e) {
     // console.log("New message received by worker", e.data.data.length)
+var base = self.location.href.substring(0, self.location.href.indexOf("/workers/"));
 importScripts(
-  "../../../lib/clipperjs/clipper_unminified.js",
-  "../../../lib/threejs/three.min.js",
-  "../../../lib/gl-matrix.js",
-  "../../../lib/tbfleming/web-cam-cpp.js"
+    base + "/lib/clipperjs/clipper_unminified.js",
+    base + "/lib/threejs/three.min.js",
+    base + "/lib/gl-matrix.js",
+    base + "/lib/tbfleming/web-cam-cpp.js"
 );
 
 
