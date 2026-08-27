@@ -15,7 +15,6 @@ importScripts(
   "https://kevinc74.github.io/OpenBuilds-CAM/lib/tbfleming/web-cam-cpp.js"
 );
 
-
     var toolpaths = JSON.parse(e.data.data.toolpath);
 
     var jobindex = e.data.data.index;
